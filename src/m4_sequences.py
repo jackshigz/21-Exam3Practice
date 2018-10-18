@@ -304,8 +304,16 @@ def practice_problem4c(points):
       :type points: tuple of rg.Point
       :rtype: rg.Point | string
     """
+    for k in range(len(points)):
+        if is_prime(points[k].x) == True:
+            if is_prime(points[k].y) == True:
+                x = points[k].x
+                y = points[k].y
+                point = rg.Point(y,x)
+                return point
+    return "Not found"
     ####################################################################
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #     The testing code is already written for you (above).
     #
     # IMPORTANT: This problem is your LOWEST PRIORITY for preparing
