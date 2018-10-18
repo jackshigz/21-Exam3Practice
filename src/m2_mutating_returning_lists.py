@@ -5,8 +5,8 @@ This problem provides practice at:
   ***  MUTATING  and  RETURNING-NEW  LISTS.  ***
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Haoran Shi.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 # Students:
@@ -37,7 +37,7 @@ def main():
 def run_test_doubler():
     """ Tests the    doubler    function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # DONE: 2. Implement this TEST function.
     #   It TESTS the  doubler  function defined below.
     #   Include at least ** 1 ** ADDITIONAL test beyond those we wrote.
     #
@@ -101,8 +101,14 @@ def doubler(list1, list2):
         :type list1: list of int
         :type list2: list of int
     """
+    num =[]
+    for k in range(len(list1)):
+        list1[k] = list1[k]*2
+    for j in range(len(list2)):
+        num.append(list2[j]*2)
+    return num
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
     # ------------------------------------------------------------------
