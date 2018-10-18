@@ -408,8 +408,15 @@ def practice_problem4d(sequence):
       :type sequence: (list | tuple) of int
       :rtype: int
     """
+    sum = 0
+    for k in range(len(sequence)-1):
+        if is_prime(sequence[k]) == True:
+            if is_prime(sequence[k+1]) == True:
+                if sequence[k] != sequence[k+1]:
+                    sum = sum + sequence[k]
+    return sum
     ####################################################################
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #     The testing code is already written for you (above).
     ####################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
